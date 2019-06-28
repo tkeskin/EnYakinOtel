@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
     private AdView adView;
     private InterstitialAd interstitial;
     private static final String AD_ID = "ca-app-pub-2367630010898474/9125033967";
-
-    final String GOOGLE_KEY = "AIzaSyAD_BXLA58RZf8yEWSJAV7OxwgpLbiQn68";
+    //AIzaSyAD_BXLA58RZf8yEWSJAV7OxwgpLbiQn68
+    final String GOOGLE_KEY = "";
 
     // we will need to take the latitude and the logntitude from a certain point
     // this is the default location
