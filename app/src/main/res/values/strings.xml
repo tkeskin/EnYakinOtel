@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">En Yakın Otel</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2367630010898474/7648300763</string>
+    <string name="app_name_activity">En Yakın Otel</string>
+
+    <string name="action_settings">Ayarlar</string>
+    <string name="hakkinda">Hakkında</string>
+
+    <string name="acik">Açık</string>
+    <string name="kapali">Kapalı</string>
+    <string name="feedback">Lütfen uygulama hakkındaki görüşlerinizi bildiriniz</string>
+
+
+    <string name="rate_app">Uygulamaya puan verin</string>
+    <string name="contact_us">Bize ulaşın</string>
+    <string name="all_app">Diğer uygulamalarımız</string>
+    <string name="share_app">Tavsiye et</string>
+
+    <string name="text_close">Uyarı</string>
+    <string name="text_close_message">Çıkmak istediğinize emin misiniz?</string>
+    <string name="text_close_yes">Evet</string>
+    <string name="text_close_no">Hayır</string>
+
+    <string name="action_about">Not</string>
+    <string name="action_about_text">Çalışma devam ediyor</string><string name="action_ok">Tamam</string>
+
+    <string name="text_version">v.1.0.0</string>
+
+    <string name="nav_one">Oteller</string>
+    <string name="nav_two">Hesap Özeti</string>
+    <string name="nav_three">Başka Bir Menü</string>
+    <string name="nav_four">Çıkış</string>
+
+    <string name="title_activity_sss">SSS</string>
+    <string name="title_activity_maps">Yakındaki Oteller</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="check_in_text">Check In</string>
+    <string name="cancel_text">Vazgeç</string>
+    <string name="title_activity_google_maps">Map</string>
+    <string name="title_activity_check_in">CheckIn</string>
+    <string name="title_activity_account">Account</string>
+
+    <string name="s_one">Dinleniyor</string>
+    <string name="s_two">Uyuyor</string>
+    <string name="s_three">Duşta</string>
+    <string name="s_four">Yemekte</string>
+    <string name="s_five">Kitap okuyor</string>
+    <string name="s_six">Dışarıda</string>
+
+
+    <string name="google_maps_key">AIzaSyAD_BXLA58RZf8yEWSJAV7OxwgpLbiQn68</string>
+    <string name="activity_account_tittle">Hesap Özeti</string>
+    <string name="lets">Şuna bir göz atın : https://play.google.com/store/apps/details?id=com.thkskn.enyakinotel</string>
+
+
+</resources>

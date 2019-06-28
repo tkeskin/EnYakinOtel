@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#F44336</color>
+    <color name="primaryColorDark">#D32F2F</color>
+    <color name="accentColor">#FFCDD2</color>
+    <color name="colorHighlight">#B6B6B6</color>
+	<color name="colorDivider">#EEEEEE</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

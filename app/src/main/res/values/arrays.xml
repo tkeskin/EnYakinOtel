@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nav_drawer">
+        <item>@string/nav_one</item>
+        <item>@string/nav_two</item>
+        <item>@string/nav_three</item>
+        <item>@string/nav_four</item>
+    </string-array>
+
+    <string-array name="dizi">
+        <item>@string/s_one</item>
+        <item>@string/s_two</item>
+        <item>@string/s_three</item>
+        <item>@string/s_four</item>
+        <item>@string/s_five</item>
+        <item>@string/s_six</item>
+    </string-array>
+</resources>

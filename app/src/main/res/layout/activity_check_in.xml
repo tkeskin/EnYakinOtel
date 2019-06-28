@@ -1,0 +1,108 @@
+<LinearLayout
+    android:id="@+id/linear_check"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.thkskn.enyakinotel.CheckIn">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv1"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                tools:ignore="contentDescription"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="8dp"
+                android:maxHeight="64dp"
+                android:maxWidth="64dp"
+                android:src="@drawable/ic_15"/>
+            <TextView
+                android:id="@+id/check_in_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_toLeftOf="@id/flag"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv2"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            tools:ignore="contentDescription"
+            android:src="@drawable/ic_13"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/ic1"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:text="Checked - in"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check - Out"
+        android:onClick="onCheckOut"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        style="?android:attr/borderlessButtonStyle"/>
+
+
+</LinearLayout>

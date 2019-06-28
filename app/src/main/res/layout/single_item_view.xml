@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv5"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        card_view:contentPadding="4dp">
+
+    <ImageView
+        android:id="@+id/ecz"
+        android:layout_below="@id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        tools:ignore="contentDescription"
+        android:src="@drawable/ic_4"
+        android:layout_margin="8dp"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv2"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv5"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        card_view:contentPadding="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                tools:ignore="contentDescription"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_7"/>
+
+            <View
+                android:id="@+id/m_devider"
+                android:layout_width="0.5dp"
+                android:layout_height="65dp"
+                android:background="#E0E0E0"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/ic1"/>
+
+            <TextView
+                android:id="@+id/counter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/m_devider"
+                android:layout_toLeftOf="@id/flag"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/adress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/counter"
+                android:layout_toRightOf="@id/m_devider"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@id/flag"
+                android:textSize="17sp"/>
+
+
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                tools:ignore="contentDescription"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_5"
+                android:clickable="true"
+                android:onClick="routeMaps"/>
+
+        </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card3"
+        android:layout_below="@id/cv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        card_view:contentPadding="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            tools:ignore="contentDescription"
+            android:src="@drawable/ic_6"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <View
+            android:id="@+id/m_devider2"
+            android:layout_width="0.5dp"
+            android:layout_height="55dp"
+            android:background="#E0E0E0"
+            android:layout_toRightOf="@id/ic2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/m_devider2"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/check_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/check_in_text"
+        android:onClick="onCheckIn"
+        android:layout_below="@id/card3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_green_light"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_text"
+        android:onClick="onCancel"
+        android:layout_below="@id/check_in_button"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    
+
+
+</RelativeLayout>

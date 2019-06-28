@@ -1,0 +1,90 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.thskn.neczkon.NavigationDrawerFragment"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="125dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        tools:ignore="contentDescription"
+        android:src="@drawable/ic_17"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerlist"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"/>
+
+<LinearLayout
+        android:id="@+id/bottomGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|center">
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDivider"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom|center">
+            <ImageButton
+                android:id="@+id/ic_info"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_info"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                tools:ignore="contentDescription"
+                android:layout_marginBottom="16dp"
+                android:onClick="onInfo"/>
+            <ImageButton
+                android:id="@+id/ic_settings_bottom"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_settings"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                tools:ignore="contentDescription"
+                android:layout_marginLeft="27dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="onSettings"/>
+            <ImageButton
+                android:id="@+id/ic_stop"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_power"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                tools:ignore="contentDescription"
+                android:layout_marginLeft="27dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="onExit"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

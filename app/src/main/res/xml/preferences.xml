@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="rateus"
+        android:title="@string/rate_app"/>
+    <Preference
+        android:key="contactDevKey"
+        android:title="@string/contact_us">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="mailto:tahakeskyn@gmail.com">
+            <extra
+                android:name="android.intent.extra.SUBJECT"
+                android:value="@string/app_name"/>
+        </intent>
+    </Preference>
+    <Preference
+        android:key="shareApp"
+        android:title="@string/share_app">
+        <intent
+            android:action="android.intent.action.SEND"
+            android:mimeType="text/plain">
+            <extra
+                android:name="android.intent.extra.SUBJECT"
+                android:value="@string/app_name"/>
+            <extra
+                android:name="android.intent.extra.TEXT"
+                android:value="@string/lets"/>
+        </intent>
+    </Preference>
+    <Preference
+        android:key="allapps"
+        android:title="@string/all_app"/>
+
+</PreferenceScreen>
